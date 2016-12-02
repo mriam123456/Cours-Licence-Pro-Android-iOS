@@ -47,3 +47,47 @@ if (matcher.matches()) {
     System.out.println("Match: " + matcher.group());
 }
 ```
+
+##Groupes de capture
+
+On peut également itérer sur les groupes de capture extraits par le Matcher
+
+```java
+
+String pattern = "([a-zA-Z]+) (\\d+)";
+Pattern ptrn = Pattern.compile("([a-zA-Z]+) (\\d+)");
+Matcher matcher = ptrn.matcher("June 24, August 9, Dec 12");
+
+// Ceci va afficher chacun des Match et leur index dans le String Matché
+//
+//   June 24 at index [0, 7)
+//   August 9 at index [9, 17)
+//   Dec 12 at index [19, 25)
+
+while (matcher.find()) {
+    System.out.println(String.format("Match: %s at index [%d, %d]",
+        matcher.group(), matcher.start(), matcher.end()));
+}
+
+// Si nous devons réeffectuer la traverse , utiliser .reset() sur l'objet Matcher 
+// matcher pour replacer l'iterateur en début de chaine
+matcher.reset();
+
+
+while (matcher.find()) {
+    // Affiche le nombre de groupes capturés dans ce Match
+    System.out.println(String.format("%d groups captured", 
+        matcher.groupCount()));
+
+    // Affiche le mois et le jour .  Attention le premier groupe est toujours 
+    // l'ensemble du texte matché , donc on récupère le mois à l'index 1
+    
+    System.out.println("Month: " + matcher.group(1) + ", Day: " + 
+        matcher.group(2));
+
+    // Chaque group à également ses indices de départ et de fin , relatif à la 
+    // chaine en entrée
+    System.out.println(String.format("Month found at[%d, %d)", 
+        matcher.start(1), matcher.end(1)));
+}
+```
