@@ -124,9 +124,9 @@ System.out.println(replacedString);
 Quelques flags sont disponible lors de la phase de compilation du pattern , offrant des
 modification sur le comportement du moteur d'expressions régulières
 
-* Pattern.CASE_INSENSITIVE _Pas de contrôle de la capitalisation ex: A = a_
-* Pattern.MULTILINE _Nécessaire si la String en entrée contient des retour à la ligne et que votre Regex doit permettre de matcher les lignes \n individuellement avec **^** et **$** plutot que l'ensemble du String_
-* Pattern.DOTALL _Permet au point . de matcher les nouvelles lignes \n également_
-* Pattern.LITERAL _Supprime la compilation des métacaractère et compile le Regex litérallement ex: \d va matcher \d plutot qu'un chiffre_
+* **Pattern.CASE_INSENSITIVE** _Pas de contrôle de la capitalisation ex: A = a_
+* **Pattern.MULTILINE** _Nécessaire si la String en entrée contient des retour à la ligne et que votre Regex doit permettre de matcher les lignes \n individuellement avec **^** et **$** plutot que l'ensemble du String_
+* **Pattern.DOTALL** _Permet au point . de matcher les nouvelles lignes \n également_
+* **Pattern.LITERAL** _Supprime la compilation des métacaractère et compile le Regex litérallement ex: \d va matcher \d plutot qu'un chiffre_
 
 
