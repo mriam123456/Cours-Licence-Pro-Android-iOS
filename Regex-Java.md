@@ -91,3 +91,32 @@ while (matcher.find()) {
         matcher.start(1), matcher.end(1)));
 }
 ```
+##Trouver et remplacer dans les Strings
+
+Une autre tâche commun&ément effectuée est de trouver et remplacer une partie d'un string via les regex , par exemple , pour remplacer toutes les instances d'un vieux domaine mail , ou changer l'ordre dans un texte .
+En Java les méthodes .replaceAll() et .replaceFirst() de l'objet Matcher permettent ce type de traitement . Chacune de ces méthodes commencent par reset le matcher en début de string et l'arrête soit en fin de String , soit en fin de première occurence de match
+
+La String de remplacement peut contenir des références aux groupes capturés dans le pattern (en utilisant le signe **$**), ou une String littérale
+
+```java
+String replacedString = matcher.replaceAll(String inputStr)
+String replacedString = matcher.replaceFirst(String inputStr)
+```
+```java
+// On veut renverser l'ordre date/mois dans nos strings.
+// Notez que la String de remplacement contient également des métacaractère 
+// (les "back references" aux groupes de capture) 
+
+Pattern ptrn = Pattern.compile("([a-zA-Z]+) (\\d+)");
+Matcher matcher = ptrn.matcher("June 24, August 9, Dec 12");
+
+// Ceci va renverser l'ordre et imprimer
+//   24 of June, 9 of August, 12 of Dec
+//
+// Remember that the first group is always the full matched text, so the 
+// month and day indices start from 1 instead of zero.
+String replacedString = matcher.replaceAll("$2 of $1");
+System.out.println(replacedString);
+```
+
+##
