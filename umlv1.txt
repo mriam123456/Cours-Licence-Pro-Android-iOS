@@ -1,0 +1,23 @@
+[hObject|x: int;y: int;hAnList: List hAnim|+draw(){bg:lightslategray}]^-[hRectObject|sizeX: int; sizeY: int|@+draw(){bg:lightcyan}],
+[hObject||]^-[hCircleObject|radius: int|@+draw(){bg:lightcyan}],
+[hObject||]^-[hTextObject|text: String|@+draw(){bg:lightcyan}],
+[hObject||]^-[hImgObject|img: Res|@+draw(){bg:lightcyan}], 
+[hObject||]^-[hContainerObject|lObj: List hObject|@+draw(){bg:gold}], [hContainerObject||]++1-*>[hObject|@+draw()], [hObject]++1-*>[hAnim|], [hAnim|+move();+resize(){bg:lightslategray}]^-[imgAnim|@+resize(){bg:lavender}], [hAnim|]^-[circleAnim|@+resize(){bg:lavender}], [hAnim|]^-[texTAnim|@+resize(){bg:lavender}], [hAnim]->[globalTimer{bg:steelblue}],
+[hObject]-[note: Type de base pour la composition graphique (abstract){bg:cornsilk}],
+[hAnim]-[note: Type de base pour l'animation des hObject (abstract){bg:cornsilk}] ,
+
+[hContainerObject]-[note: Type composite Container pour exécution évaluée de la composition{bg:cornsilk}],
+[hContainerObject]^-[hCompositionContainer{bg:forestgreen}],
+[hContainerObject]^-[hCompositeAnimContainer{bg:forestgreen}],
+[hCompositionContainer]-[note: Point entrée de la composition{bg:cornsilk}],
+[hCompositeAnimContainer]-[note: Container composite de hObject peut être spécialisé{bg:cornsilk}],
+[hRectObject]-[note: Objets concrets  leaf{bg:cornsilk}],
+[hImgObject]-[note: Objets concrets  leaf{bg:cornsilk}],
+[hCircleObject]-[note: Objets concrets  leaf{bg:cornsilk}],
+[hTextObject]-[note: Objets concrets  leaf{bg:cornsilk}],
+
+[imgAnim]-[note: Objets concrets  animation peuvent être décorés{bg:cornsilk}],
+[textAnim]-[note: Objets concrets  animation peuvent être décorés{bg:cornsilk}],
+[circleAnim]-[note: Objets concrets  animation peuvent être décorés{bg:cornsilk}]
+
+[globalTimer]-[note: Classe statique{bg:cornsilk}]
