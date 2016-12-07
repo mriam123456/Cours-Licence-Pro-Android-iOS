@@ -9,7 +9,7 @@ On peut également noter que chaque langage de programmation est client d'une co
 Comme nous l'avons vu en cours , le fonctionnement de l'ordinateur , au niveau assembleur / Langage machine , n'offre l'accès qu'a des capacités limités compte tenu de la structure du programme . Les premières capacités d'abstraction (procédure , syntaxe de boucle simplifiée , pointeurs ...) sont apparues avec les premiers langage de haut niveau (PASCAL ,COBOL) et ont été formalisée par le langage C.
 
 Le paradigme de programmation procédurale permet la décomposition fonctionnelle d'une application , ce qui autorise une forme de structure basique dans le programme, simplifiant la réutilisation de code , la déclaration et l'exploitation des structures de données statiques (tableaux).
-Ce simple gain à grandement supporté la démocratisation de l'informatique en mettant à disposition d'un public de programmeur beaucoup plus large de créer des programmes sans maitriser au préalable l'ensemble des concepts sous-jacents (fonctionnement processeur / mémoire etc ..)
+Ce simple gain à grandement supporté la démocratisation de l'informatique en permettant à un public de programmeur beaucoup plus large de créer des programmes sans maitriser au préalable l'ensemble des concepts sous-jacents (fonctionnement processeur / mémoire etc ..)
 
 
 Cependant , la décomposition fonctionnelle rencontre également ses limites car bien qu'elle permette la réutilisation du code , elle ne permet pas la spécialisation du code , un concept dont l'importance grandit paralèllement à la taille d'un programme . De plus elle aboutit en bout de compte à une forme d'ogranisation trop friable pour supporter les nombreuses itérations et changement de design caractérisant le développement des logiciels modernes.
