@@ -44,7 +44,10 @@ La couche objet en Java est implémentée avec les éléments suivants (du moins
     -----------|-----------|-----------
     **Cycle de vie** | Lancement du programme | Instanciation
     | Exécution et exploitation | Opération au runtime
-    
+    | Fermeture du programme par l'utilisateur | destruction    
+    **Champs / Méthodes privées** | Invisibles pour l'utilisateur |Invisibles pour le code client de l'objet
+    **Propriétés / Méthodes publiques** Fonctions haut niveau du programme | Méthodes publiques de l'objet
+    |Configuration et Interface Utilisateur| Constructeur et Propriétés publiques
     
       * son ###cycle de vie### (Instanciation / _lancement du programme_ , opération au runtime / _exécution et exploitation du programme par l'utilisateur_, destruction / _Fermeture du programme par l'utilisateur_) 
       * ses Champs/Méthodes privées (Invisibles pour le code client de l'objet / _Invisibles pour l'utilisateur_) 
