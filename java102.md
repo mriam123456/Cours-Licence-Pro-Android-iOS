@@ -52,7 +52,7 @@ La couche objet en Java est implémentée avec les éléments suivants (du moins
      | Configuration et Interface Utilisateur | Constructeur et Propriétés publiques
     
     
-#####    L'objet est l'unité fonctionnelle de base au Runtime , **encapsulant**  code et de données . La structure d'un programme quelque soit sa taille et sa complexité peut être rationalisée par l'application de Design Patterns qui définissent leurs modalités de création (Créationnel), d'agencement (Structurel) et d'interopérabilité (Comportemental) pendant l'exécution.
+####    L'objet est l'unité fonctionnelle de base au Runtime , **encapsulant**  code et de données . La structure d'un programme quelque soit sa taille et sa complexité peut être rationalisée par l'application de Design Patterns qui définissent leurs modalités de création (Créationnel), d'agencement (Structurel) et d'interopérabilité (Comportemental) pendant l'exécution.
     
 ###Les Eléments de Design
  * La classe
