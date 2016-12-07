@@ -27,13 +27,13 @@ Ces langages mettent à dispotion même d'un programmeur seul , la puissance de 
 
 La couche objet en Java est implémentée avec les éléments suivants (du moins abstrait au plus abstrait)
    
+###Les Eléments actifs au Runtime   
+   
  * La classe statique
     * Une classe statique n'a pas besoin d'être instanciée , elle existe dès l'initialisation du programme , et ses attributs publics (Méthodes / Propriétés) sont accessible à l'ensemble du programme
     * A ce titre le code contenu dans une classe statique peut être vu comme une extension de Java , spécifique à notre programme , car tout comme l'ensemble des fonctions du langage , il peut être appellé de tout point dans le programme.
     * Pour cette raison , le contenu des classes statiques doit être considéré avec soin , elle hébergent généralement l'interfacage avec les sources de données externes au programme (système de fichier / base de données / Accès HTTP etc ...).
     * Le but ultime d'une classe statique est de fournir des fonctions transversales dans notre programme (Interfacage externe / Pattern créationnels ...) dans le but de simplifier l'écriture , l'expressivité , la concision et la lisibilité du code client 
-    
-    ###Les Eléments actifs au Runtime
     
   * L'objet (classe non statique instanciée)
     * Un objet n'a d'existence au runtime que si il est instancié.
