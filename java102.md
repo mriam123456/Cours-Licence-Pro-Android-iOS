@@ -33,6 +33,8 @@ La couche objet en Java est implémentée avec les éléments suivants (du moins
     * Pour cette raison , le contenu des classes statiques doit être considéré avec soin , elle hébergent généralement l'interfacage avec les sources de données externes au programme (système de fichier / base de données / Accès HTTP etc ...).
     * Le but ultime d'une classe statique est de fournir des fonctions transversales dans notre programme (Interfacage externe / Pattern créationnels ...) dans le but de simplifier l'écriture , l'expressivité , la concision et la lisibilité du code client 
     
+    ###Les Eléments actifs au Runtime
+    
   * L'objet (classe non statique instanciée)
     * Un objet n'a d'existence au runtime que si il est instancié.
     * L'instanciation d'un objet s'effectue par le biais d'une fonction spéciale , le constructeur
@@ -50,10 +52,11 @@ La couche objet en Java est implémentée avec les éléments suivants (du moins
     |Configuration et Interface Utilisateur| Constructeur et Propriétés publiques
     
     
-###    L'objet est l'outil de base pour la construction de programme , permettant l'**encapsulation** de code et de données . La structure d'un programme quelque soit sa taille et sa complexité peut être rationalisée par l'application de Design Patterns qui définisse leurs modalités de création (Créationnel), d'agencement (Structurel) et d'interopérabilité (Comportemental)
+#####    L'objet est l'unité fonctionnelle de base au Runtime , **encapsulant**  code et de données . La structure d'un programme quelque soit sa taille et sa complexité peut être rationalisée par l'application de Design Patterns qui définissent leurs modalités de création (Créationnel), d'agencement (Structurel) et d'interopérabilité (Comportemental) pendant l'exécution.
     
+###Les Eléments de Design
  * La classe
-    * La classe est l'élément de base du design objet , elle permet de définir une maquette de programme auto-contenu , les mécanismes d'héritage permettent de **spécialiser une classe** (mot-clé extends)
+    * La classe est l'élément de base du design objet , elle permet de définir une maquette de programme auto-contenu qui deviendra un objet au runtime , les mécanismes d'héritage permettent de **spécialiser une classe** (mot-clé extends)
     * Une classe peut également être **spécifiée** par une interface (mot clé implements)
  * La classe abstraite
     * La classe abstraite est une étape intermédiaire entre la classe (exposant des méthodes concrètes)et l'interface(spécifiant des méthodes abstraite) , tout comme l'interface , elle ne peut être instanciée directement , mais elle peut contenir des méthodes concrètes
