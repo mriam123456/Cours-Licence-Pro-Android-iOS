@@ -42,6 +42,8 @@ La couche objet en Java est implémentée avec les éléments suivants (du moins
     
                | Programme | Objet
     -----------|-----------|-----------
+    **Cycle de vie** | Lancement du programme | Instanciation
+    | Exécution et exploitation | Opération au runtime
     
     
       * son ###cycle de vie### (Instanciation / _lancement du programme_ , opération au runtime / _exécution et exploitation du programme par l'utilisateur_, destruction / _Fermeture du programme par l'utilisateur_) 
