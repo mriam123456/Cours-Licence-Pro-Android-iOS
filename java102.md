@@ -40,8 +40,8 @@ La couche objet en Java est implémentée avec les éléments suivants (du moins
     * L'objet est l'unité conceptuelle et structurelle de base dans un langage de programmation moderne
     * Il peut être assimilé à un mini-programme dans le programme avec :
     
-    Programme | Objet
-    ----------|----------
+               | Programme | Objet
+    -----------|-----------|-----------
     
     
       * son ###cycle de vie### (Instanciation / _lancement du programme_ , opération au runtime / _exécution et exploitation du programme par l'utilisateur_, destruction / _Fermeture du programme par l'utilisateur_) 
