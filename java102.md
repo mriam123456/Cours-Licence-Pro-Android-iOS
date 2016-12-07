@@ -35,7 +35,7 @@ La couche objet en Java est implémentée avec les éléments suivants (du moins
     * Pour cette raison , le contenu des classes statiques doit être considéré avec soin , elle hébergent généralement l'interfacage avec les sources de données externes au programme (système de fichier / base de données / Accès HTTP etc ...).
     * Le but ultime d'une classe statique est de fournir des fonctions transversales dans notre programme (Interfacage externe / Pattern créationnels ...) dans le but de simplifier l'écriture , l'expressivité , la concision et la lisibilité du code client 
     
-  * L'objet (classe non statique instanciée)
+ * L'objet (classe non statique instanciée)
     * Un objet n'a d'existence au runtime que si il est instancié.
     * L'instanciation d'un objet s'effectue par le biais d'une fonction spéciale , le constructeur
     * Un objet est une représentation au runtime d'un type défini (Classe)
