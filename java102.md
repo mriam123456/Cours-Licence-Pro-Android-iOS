@@ -14,6 +14,12 @@ Ce simple gain à grandement supporté la démocratisation de l'informatique en 
 
 Cependant , la décomposition fonctionnelle rencontre également ses limites car bien qu'elle permette la réutilisation du code , elle ne permet pas la spécialisation du code , un concept dont l'importance grandit paralèllement à la taille d'un programme . De plus elle aboutit en bout de compte à une forme d'ogranisation trop friable pour supporter les nombreuses itérations et changement de design caractérisant le développement des logiciels modernes.
 
+L'intégration de la couche objet pour C (C++) , permet de conquérir les problèmes de structure du programme , grâce à l'application des concepts objets et des Design Pattern . Ce langage , aujourd'hui utilisé pour la programmation d'OS (Linux,Windows) offre le meilleur rapport Structure / Performance. Cependant il s'agit d'un langage procédural auquel une couche objet à été ajouté  , et la programmation d'un projet d'ampleur est une tâche lourde , nécessitant une précision technique importante . De plus la portabilité du code C++ est extrèmement limité puisqu'il doit être refactoré et recompilé pour chaque plateforme .
+
+
+**Java** et **C#** proposent une approche fondamentalement différente de la programmation . Ces langages s'exécutent sur une machine virtuelle (JVM pour Java / CLR pour C#) dont le support multi-système est assuré par l'éditeur . La gestion de la mémoire est prise en charge par le langage et tous les deux sont des langages entièrement objet .
+Ces langages mettent à dispotion même d'un programmeur seul , la puissance de 50 années de recherche/expérience en terme de conception de code informatique et sont généralement ceux utilisé par les API spécialisées modernes , comme c'est le cas pour Android.
+
 ##Les Bases
 
 La couche objet en Java est implémentée avec les éléments suivants (du moins abstrait au plus abstrait)
