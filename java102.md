@@ -49,9 +49,8 @@ La couche objet en Java est implémentée avec les éléments suivants (du moins
     **Propriétés / Méthodes publiques** Fonctions haut niveau du programme | Méthodes publiques de l'objet
     |Configuration et Interface Utilisateur| Constructeur et Propriétés publiques
     
-      * son ###cycle de vie### (Instanciation / _lancement du programme_ , opération au runtime / _exécution et exploitation du programme par l'utilisateur_, destruction / _Fermeture du programme par l'utilisateur_) 
-      * ses Champs/Méthodes privées (Invisibles pour le code client de l'objet / _Invisibles pour l'utilisateur_) 
-      * ses Méthodes et propriétés publiques (Méthodes publiques / _Fonctions haut niveau du programme_   , Constructeur et Propriétés publiques / _Configuration et Interface Utilisateur_)
+    
+###    L'objet est l'outil de base pour la construction de programme , permettant l'**encapsulation** de code et de données . La structure d'un programme quelque soit sa taille et sa complexité peut être rationalisée par l'application de Design Patterns qui définisse leurs modalités de création (Créationnel), d'agencement (Structurel) et d'interopérabilité (Comportemental)
     
  * La classe
     * La classe est l'élément de base du design objet , elle permet de définir une maquette de programme auto-contenu , les mécanismes d'héritage permettent de **spécialiser une classe** (mot-clé extends)
